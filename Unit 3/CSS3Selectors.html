@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title>CSS3 Selectors</title>
+		
+		<style type = "text/css">
+			
+			/*p {font-size: 1.5em;}*/
+			
+			.plus + p {color:red;}
+
+			.plus + p + ul{color:blue;}
+			
+			.greaterthan > p {color:green;}
+			
+			.tilday ~ p {color:blue;}
+			
+			.selection::selection {color:green;}
+			
+			.selection2::selection {color:red;}
+			
+			.box {height: 200px;
+					width: 200px;
+					border: 2px solid black;}
+			
+			p:empty {background-color: blue;}
+			
+			[title~=chrome] {border: 5px solid blue;}
+			
+			a[target=_blank] {color: red;}
+			
+			
+			
+			
+
+		</style>
+	</head>
+
+	<body>
+		<h1>The "+" Selector</h1>
+			<p>Example: .plus + p {color: red;}<br>
+				Selects all p elements immediately following a plus class element</p>
+		<div class = "plus">
+			<p>This is inside the plus class</p>
+		</div>
+		<p>This is immediately after the plus class</p>
+		<p>This is not Immediately after</p>
+		<br>
+		<p>You can combine the +'s to make them complicated, for example:<br>
+			.plus + p + ul &#123;color:blue;&#125; Selects all elements that are unordered lists that immediately follow a plus class then a p </p>
+		<div class = "plus">
+			<p>This is inside the plus class</p>
+		</div>
+		<p>this is immediately following the plus class</p>
+		<ul>This unordered list immediately follows the paragraph that follows the plus class</ul>
+		<ul>This unordered list does not</ul>
+		
+			
+		<h1>The "&gt;" Selector</h1>
+			<p>Example: .greaterthan &gt; p &#123;color:green;&#125;<br>
+				Selects all direct p children of the greaterthan class</p>
+		<p>This is before the greaterthan class</p>
+		<div class = "greaterthan">
+			<p>This is inside the greaterthan class</p>
+			<p>This is inside the greaterthan class</p>
+			<div>
+				<p>this is inside a unclassified div</p>
+				<p>this is inside a unclassified div</p>
+				<div class = "greaterthan">
+					<p>This is inside a greaterthan class nested in a unclassified div</p>
+					<p>This is inside a greaterthan class nested in a unclassified div</p>
+				</div>
+			</div>
+		</div>
+			<p>This is after the greaterthan class</p>
+			
+			
+		<h1>The "~" Selector</h1>
+			<p>Example: .tilday ~ p &#123;color:blue;&#125;<br>
+				Selects all p elements preceding the .tilday of the same parent</p>
+		<div>
+			<div class = "tilday">
+				<p>This is a child of the .tilday class</p>
+			</div>
+			<p>This precedes the .tilday class</p>
+			<div>
+				<p>This precedes the .tilday class but is not of the same parent</p>
+			</div>
+			<p>This precedes the .tilday class</p>
+		</div>
+		
+		
+		<h1>::selection Pseudo Selector</h1>
+			<p>Example: .selection:selection &#123;color:green;&#125;<br>
+				selects the selection of the determined element by the user</p>
+		
+		<p class = "selection">Highlight to turn green</p>
+		
+		<p class = "selection2">Styles for this selector seem to be limited</p>
+		
+		
+		<h1>:empty Pseudo Selector</h1>
+			<p>Example: p:empty &#123;color: blue;&#125;<br>
+				Will only select p's with nothing in them</p>
+		
+		<p class = "box">This is a paragraph with content</p>
+		<p class = "box"></p>
+		<p class = "box">This is a paragraph with content</p>
+		
+		
+		<h1>Attribute~=value Selector</h1>
+			<p>Example: [title~=chrome] {border: 5px solid blue;}<br>
+				This selects all elements with the title "chrome"</p>
+			<img src = "chrome-logo-200x200.png" 
+				 alt = "chrome"
+				 title = "chrome" 
+				 width = "200" 
+				 height = "200">
+			<img src = "chrome-logo-200x200.png"
+				 alt = "chrome"
+				 width = "200"
+				 height = "200">
+		
+		<h1>Attribute=Value Selector</h1>
+			<p>Example: a[target=_blank] {color:blue;}<br>
+				Selects all links with their target as _blank</p>
+		
+		<a href = "CSS3Selectors.html" target = "_blank">Link with _blank target</a><br>
+		<a href = "CSS3Selectors.html" target = "_top">Link with _top target</a>
+
+	</body>
+</html>

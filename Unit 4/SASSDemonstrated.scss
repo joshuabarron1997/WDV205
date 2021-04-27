@@ -1,0 +1,13 @@
+/* Scss Document */
+$primary-color: red;
+
+@import 'gradientMixin';
+
+.red {color: $primary-color;}
+
+.box {	@include verticalGradient(blue, green);
+		width: 400px;
+		height: 200px;
+		color: white;}
+div {
+	p {color: blue;}}

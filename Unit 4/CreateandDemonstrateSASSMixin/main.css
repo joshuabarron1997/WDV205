@@ -1,0 +1,31 @@
+/* Scss Document */
+/* Scss Document */
+/* Scss Document */
+/* Scss Document */
+.mixin1 {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  background-color: green;
+  position: absolute;
+  top: 50px;
+  right: auto;
+  bottom: auto;
+  left: 50px; }
+
+.mixin2 {
+  margin-top: 400px;
+  background-color: blue;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  color: red;
+  border-radius: 30px; }
+
+.mixin3 {
+  width: 300px;
+  height: 500px;
+  border: 10px solid purple;
+  float: right; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,276 @@
+/* Scss Document */
+@media screen and (min-width: 300px) {
+  @keyframes start {
+    0% {
+      -webkit-transform: translateX(1000px);
+      -ms-transform: translateX(1000px);
+      transform: translateX(1000px); }
+    100% {
+      -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+      transform: translateX(0px); } }
+  @keyframes enlarge {
+    0% {
+      width: 0px;
+      height: 0px; }
+    50% {
+      width: 300px;
+      height: 123.75; }
+    100% {
+      width: 200px;
+      height: 82.5px; } }
+  @keyframes enlarge2 {
+    0% {
+      width: 0px;
+      height: 0px; }
+    50% {
+      width: 300px;
+      height: 71px; }
+    100% {
+      width: 275px;
+      height: 65px; } }
+  @keyframes end {
+    0% {
+      -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+      transform: translateX(0px); }
+    100% {
+      -webkit-transform: translateX(1000px);
+      -ms-transform: translateX(1000px);
+      transform: translateX(1000px); } }
+  @keyframes spin {
+    0% {
+      -webkit-transform: translate(100 100);
+      -ms-transform: translate(100 100);
+      transform: translate(100 100);
+      -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      transform: rotate(270deg); }
+    100% {
+      -webkit-transform: translate(0 0);
+      -ms-transform: translate(0 0);
+      transform: translate(0 0);
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg); } }
+  #mobileAd {
+    display: none; }
+
+  #ad {
+    width: 300px;
+    height: 600px;
+    background-color: red;
+    background-image: url(../images/realbackground.gif);
+    margin: 10px auto 0 auto;
+    border: black 3px solid;
+    animation-name: start, end;
+    animation-delay: 0s, 14s;
+    animation-duration: 2s, 2s; }
+
+  .close {
+    width: 15px;
+    height: 15px;
+    float: right;
+    background-color: white;
+    border-bottom: 3px black solid;
+    border-left: 3px black solid; }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table; }
+
+  #ribbon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px; }
+
+  #ribbon {
+    display: none;
+    animation-name: enlarge;
+    animation-duration: 1s; }
+
+  #santa {
+    animation-name: santa;
+    animation-duration: 4s;
+    display: none; }
+
+  .text1 {
+    animation-name: spin;
+    animation-duration: 1s;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px; }
+
+  .text2 {
+    animation-name: spin;
+    animation-duration: 1s;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px; }
+
+  .text3 {
+    animation-name: spin;
+    animation-duration: 1s;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px; }
+
+  .text3 a {
+    color: white; }
+
+  #text1 {
+    display: none; }
+
+  #text2 {
+    display: none; }
+
+  #text3 {
+    display: none; }
+
+  #target {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    animation-name: enlarge2;
+    animation-duration: 1s; } }
+@media screen and (max-width: 300px) {
+  @keyframes mobile {
+    0% {
+      -webkit-transform: translateY(-500px);
+      -ms-transform: translateY(-500px);
+      transform: translateY(-500px); }
+    100% {
+      -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      transform: translateY(0px); } }
+  @keyframes mobileEnd {
+    0% {
+      -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      transform: translateY(0px); }
+    100% {
+      -webkit-transform: translateY(-500px);
+      -ms-transform: translateY(-500px);
+      transform: translateY(-500px); } }
+  #mobileAd {
+    width: 300px;
+    height: 150px;
+    background-image: url(../images/realbackground.gif);
+    animation-name: mobile, mobileEnd;
+    animation-duration: 2s, 2s;
+    animation-delay: 0s, 14s;
+    color: white;
+    font-size: .75em; }
+
+  #mobileAd h1 a {
+    color: white; }
+
+  #mobileAd h1 {
+    position: absolute;
+    bottom: 5px; }
+
+  .closemobile {
+    width: 15px;
+    height: 15px;
+    float: right;
+    background-color: white;
+    border-bottom: 3px black solid;
+    border-left: 3px black solid;
+    display: block; }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table; } }
+/*after this line is just the website not the ad*/
+* {
+  padding: 0px;
+  margin: 0px; }
+
+#container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: lightblue; }
+
+header {
+  height: 225px;
+  flex-direction: row; }
+
+header h1 {
+  margin-top: 40px;
+  margin-bottom: 60px; }
+
+header img {
+  margin-left: 20%;
+  margin-right: 100px; }
+
+.center {
+  text-align: center;
+  margin-top: 10px; }
+
+.logotext {
+  margin-top: 100px; }
+
+.flex {
+  display: flex; }
+
+.gallery {
+  width: 50%; }
+
+.gallery p {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 425px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.gallery {
+  margin-bottom: 25px; }
+
+p img {
+  margin-top: 10px; }
+
+header {
+  border: black solid 1px; }
+
+nav {
+  border: black solid 1px;
+  color: white;
+  background-color: black; }
+
+section {
+  width: 50%; }
+
+.input {
+  width: 60%; }
+
+footer {
+  background-color: black;
+  color: white;
+  height: 100px; }
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.footer1 {
+  margin-top: 40px;
+  margin-left: 40px; }
+
+.footer2 {
+  margin-top: 40px;
+  margin-right: 40px;
+  height: 50px;
+  width: 165px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+/*# sourceMappingURL=main.css.map */

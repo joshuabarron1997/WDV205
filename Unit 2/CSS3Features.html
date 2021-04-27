@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Chango|Dancing+Script|Gamja+Flower" rel="stylesheet">
+		<meta charset="utf-8">
+		<title>CSS3 Features</title>
+		<style type = "text/css">
+			#roundedborders {height: 150px;
+								width: 150px;
+								background-color: black;
+								color: white;
+								border-width: 5px;
+								border-color: black;
+								border-radius: 25px;
+								text-align: center;}
+			.RGBA {color:rgba(255,0,0,1.00)}
+			.HSL {color:hsl(240, 100%, 50%)}
+			.HSLA {color:hsla(120, 100%, 50%, .5)}
+			.Opacity {opacity: .50;}
+			.gradient {height: 100px;
+						width: 300px;
+						text-align: center;
+						background-image: linear-gradient(to right, green, orange);}
+			.texthandle {	white-space: nowrap;
+							width: 50px;
+							border: 1px solid black;
+							overflow: hidden;
+							text-overflow: clip;}
+			.texthandle2 {	white-space: nowrap;
+							width: 50px;
+							border: 1px solid black;
+							overflow: hidden;
+							text-overflow: ellipsis;}
+			.webfonts {font-family: 'ganja flower', cursive;}
+			.webfonts2 {font-family: 'chango', cursive;}
+			.webfonts2 {font-family: 'Dancing Script', cursive;}
+			.roundedshadow {height: 35px;
+							width: 100px;
+							text-align: center;
+							background-color: lightblue;
+							border: 1px solid black;
+							border-radius: 25px;
+							box-shadow: 10px 10px 10px black;}
+			#pagination {display: inline-block;}
+			#pagination a {color: black;
+							margin: 0 2px;
+							border: 1px solid black;
+							float: left;
+							padding: 8px 16px;
+							text-decoration: none;}
+			#pagination a:hover:not(.active) {background-color:hsla(0,0%,45%,.50);
+												border-radius: 5px;}
+			#pagination a.active {background-color: green;
+									color: white;
+									border-radius: 5px;}
+			#Columns {column-count: 3;
+						column-gap: 20px;
+						column-rule-style: solid;
+						column-rule-width: 3px;
+						margin-top: 10px;}
+			.outline {height: 150px;
+						width: 150px;
+						border: 1px solid black;
+						text-align: center;
+						outline: 5px solid blue;
+						margin: 20px}
+			.outline2 {height: 150px;
+						width: 150px;
+						border: 1px solid black;
+						text-align: center;
+						outline: 5px solid blue;
+						outline-offset: 5px;
+						margin: 20px 20px 20px 25px}
+			.outline3 {height: 150px;
+						width: 150px;
+						border: 1px solid black;
+						text-align: center;
+						outline: 5px solid blue;
+						outline-offset: 15px;
+						margin: 35px 20px 20px 35px;}
+			.box {height: 150px;
+					width: 300px;
+					border: 1px solid black;
+					text-align: center;
+					box-sizing: border-box;}
+			.box2 {height: 150px;
+					width: 300px;
+					border: 1px solid black;
+					text-align: center;
+					box-sizing: border-box;
+					padding: 50px;}
+
+
+		</style>
+	</head>
+
+	<body>
+		<h1>Rounded Borders</h1>
+
+			<p id = "roundedborders" >rounded borders</p>
+
+		<h1>CSS3 Colors (RGBA, HSL, HSLA, Opacity)</h1>
+
+			<p class = "RGBA">Red RGBA</p>	
+			<p class = "HSL">Blue HSL</p>
+			<p class = "HSLA">Green HSLA</p>
+			<p class = "Opacity">50% Opacity</p>
+
+		<h1>Gradients</h1>
+
+			<p class = "gradient">Gradient</p>
+
+		<h1>Text Handling (Text Overflow?)</h1>
+
+			<p class = "texthandle">Text Handling</p>
+
+			<p class = "texthandle2">Text Handling</p>
+
+		<h1>Web Fonts</h1>
+
+			<p class = "webfonts">Web Fonts (Ganja Flower)</p>
+		
+			<p class = "webfonts2">Web Fonts (Chango)</p>
+		
+			<p class = "webfonts3">Web Fonts (Dancing Script)</p>
+
+		<h1>Buttons - Rounded with Shadow</h1>
+		
+			<p class = "roundedshadow">Rounded Shadow</p>
+
+		<h1>Pagination</h1>
+		
+			<div id = "pagination">
+				<a href = "#">&laquo;</a>
+				<a class = "active" href = "#">1</a>
+				<a href = "#">2</a>
+				<a href = "#">3</a>
+				<a href = "#">4</a>
+				<a href = "#">5</a>
+				<a href = "#">6</a>
+				<a href = "#">&raquo;</a>
+			</div>
+
+		<h1>Column display</h1>
+			<div id = "Columns">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet vulputate lacus. Praesent rutrum id neque eget sagittis. Suspendisse molestie diam a orci fermentum, ac iaculis ante accumsan. Vestibulum et dictum dolor. Cras elementum tellus non ornare ornare. Sed non augue pretium, mattis enim id, auctor est. Fusce mattis elit ut odio ultrices ullamcorper. Ut efficitur tincidunt efficitur. Donec nec posuere libero. Phasellus convallis lacus at viverra facilisis. Curabitur maximus porta lobortis. Donec vel ullamcorper dolor. Aliquam malesuada cursus dolor vel placerat. Integer pharetra ante ac purus sagittis porta. Nulla interdum congue enim, quis congue nisi vestibulum ut. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+				Integer tincidunt elit sit amet eros elementum consequat. Aliquam quis nisl a lectus euismod commodo. Aliquam convallis ligula sem, sit amet semper massa viverra vitae. In tempor orci at diam pulvinar, vel tincidunt nisi accumsan. In augue leo, accumsan id orci at, vulputate accumsan nibh. Mauris tristique pulvinar luctus. Curabitur blandit sagittis auctor. Aliquam sit amet accumsan justo, vel suscipit diam. Nulla gravida ligula ac felis volutpat, a consequat lectus vulputate.
+
+				Donec mattis odio laoreet, dictum enim at, placerat lorem. Morbi et ornare nisl. Etiam non lectus quis purus mollis consequat sit amet quis neque. Cras eget interdum purus. Nam nec tristique sem, sit amet fermentum odio. Proin mauris leo, dapibus vel viverra et, auctor tempus orci. Nullam varius luctus sapien viverra ultrices. Duis at commodo ligula.</p>
+			</div>
+
+		<h1>CSS outline-offset</h1>
+			<p class = "outline">outline</p>
+			<p class = "outline2"> outline-offset 5px</p>
+			<p class = "outline3">outline-offset 15px</p>
+
+		<h1>Box sizing</h1>
+			<p class = "box">all measurements calculated, height/width is absolute</p>
+			<p class = "box2">content will shrink if extra padding/border is added (50 padding)</p>
+	</body>
+</html>

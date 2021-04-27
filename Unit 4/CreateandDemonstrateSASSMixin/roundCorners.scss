@@ -1,0 +1,5 @@
+/* Scss Document */
+@mixin roundBorders ($cornerSize) {border-radius: $cornerSize;}
+
+@mixin colortext ($color) {color: $color;}
+

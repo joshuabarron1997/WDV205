@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href = "css/main.css" rel = "stylesheet" type = "text/css">
+	
+	<title>Advert</title>
+	
+	<script type = "text/javascript">
+			setTimeout(function(){
+		document.getElementById('ribbon').style.display = 'block';},2000);
+		
+		setTimeout(function(){
+			document.getElementById('text1').style.display = 'block';},2500)
+		
+		setTimeout(function(){
+			document.getElementById('text2').style.display = 'block';},2750)
+		
+		setTimeout(function(){
+			document.getElementById('text3').style.display = 'block';},3000)
+		
+		setTimeout(function(){
+		document.getElementById('target').style.display = 'block';},3500);
+		
+		
+		function closeAd() {
+		document.getElementById('ad').style.display = 'none';}
+		
+		function closeMobileAd() {
+		document.getElementById('mobileAd').style.display = 'none';}
+		
+		setTimeout(function(){
+			document.getElementById('ad').style.display = 'none';}, 16000);
+		
+		setTimeout(function(){
+			document.getElementById('mobileAd').style.display = 'none';}, 16000);
+		
+		
+	</script>
+	
+</head>
+
+<body>
+<div id = "container">
+	
+		<div id = "mobileAd">
+		<p class = "closemobile clearfix" onclick = "closeMobileAd()">X</p>
+			<h1>Target Year End Sales Event! <a href = "http:/target.com">Click Here!</a></h1>
+		</div>
+		<header class = "flex">
+			<h1><img style = "vertical-align:middle" src = "images/intel.png" alt = "logo"></h1>
+			<h1 class = "logotext">COMPANY NAME</h1>
+		</header>
+		
+		<nav><h1>MENU/NAVIGATION</h1></nav>
+		
+		<div class = "flex">
+			<section class = "gallery">
+				<p>	<img src = "images/500.jpg" alt = "flower" width = "425" height = "270">
+					<img src = "images/500.jpg" alt = "flower" width = "135" height = "135">
+					<img src = "images/500.jpg" alt = "flower" width = "135" height = "135">
+					<img src = "images/500.jpg" alt = "flower" width = "135" height = "135">
+					<img src = "images/500.jpg" alt = "flower" width = "135" height = "135">
+					<img src = "images/500.jpg" alt = "flower" width = "135" height = "135">
+					<img src = "images/500.jpg" alt = "flower" width = "135" height = "135">
+					<img src = "images/500.jpg" alt = "flower" width = "135" height = "135"></p>
+			</section>
+
+			<section class = "information">
+				<div id = "ad">
+					<p class = "close clearfix" onclick = "closeAd()">X</p>
+					<p class = "holidays"><img src = "images/ribbon.png" width = "200" height = "82.5" alt = "ribbon" id = "ribbon"></p> <!--400x165-->
+					<p class = "santa"><img src = "images/santa.png" alt = "santa" id = "santa"></p> <!--650x314-->
+					<h1 class = "text1" id = "text1">Save Big, up to 50% off!</h1>
+					<h1 class = "text2" id = "text2">Targets year end sales event!</h1>
+					<h1 class = "text3" id = "text3"><a href "http://target.com">Click Here</a> to see all participating locations.</h1>
+					<h1><img src = "images/target.gif" alt = "target logo" id = "target"></h1><!--275x65-->
+				</div>
+				
+			</section>
+		</div>
+		
+		<footer>
+			<div id = "footer">
+				<div class = "footer1"><h1>FOOTER</h1></div>
+				<div class = "footer2">
+					<img src = "images/facebook.png" alt = "facebook logo" width = "50" height = "50">
+					<img src = "images/twitter.png" alt = "twitter logo" width = "50" height = "50">
+					<img src = "images/Insta.png" alt = "insta logo" width = "50" height = "50">
+				</div>
+			</div>
+		</footer>
+	
+	
+	
+	
+	
+	
+	
+	</div>
+</body>
+</html>

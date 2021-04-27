@@ -1,0 +1,20 @@
+/* Scss Document */
+@import 'roundCorners';
+@import '../../ScssMixins/float';
+@import 'InternetMixin';
+.mixin1 {
+			width: 150px;
+			height: 150px;
+			text-align: center;
+	background-color: green;
+			@include abs-position(50px, auto, auto, 50px);}
+
+.mixin2 {	margin-top: 400px;
+			background-color: blue;
+			text-align: center;
+			height: 200px;
+			width: 200px;
+			@include colortext (red);
+			@include roundBorders (30px);}
+
+.mixin3 {@include float (300px, 500px, 10px solid purple, right);}

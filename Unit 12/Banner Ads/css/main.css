@@ -1,0 +1,77 @@
+/* Scss Document */
+@keyframes lettersdance {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(-15px); }
+  100% {
+    transform: translateY(0px); } }
+@keyframes fly {
+  0% {
+    transform: translate(300px, -1000px); }
+  33% {
+    transform: translate(2000px, -150px); }
+  66% {
+    transform: translate(300px, 500px); }
+  /*50% {transform: translate(350px,-150px);}
+  50% {transform: translate(350px,-150px);}*/
+  100% {
+    transform: translate 0, 0; } }
+@keyframes hover {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(-50px); }
+  100% {
+    transform: translateY(0px); } }
+@keyframes slide {
+  0% {
+    transform: translateX(-1000px); }
+  100% {
+    transform: translateX(0px); } }
+body {
+  background-image: url(../starfall.png); }
+
+#ad {
+  border: 1px black solid;
+  background-color: lightblue;
+  height: 460px;
+  width: 300px;
+  margin-top: 250px;
+  margin-left: 50px;
+  animation-name: slide;
+  animation-duration: 3s; }
+
+#letters {
+  display: flex;
+  justify-content: space-around; }
+
+#images {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px; }
+
+.speech {
+  margin-left: 20px; }
+
+.letter1:hover, .letter2:hover, .letter3:hover {
+  animation-name: lettersdance;
+  animation-duration: 1s; }
+
+/*.superwhyidle {	animation-name: hover;
+				animation-duration: 3s;
+				animation-iteration-count: infinite;
+				animation-delay: 8s}*/
+.superwhy {
+  animation-name: fly, hover;
+  animation-duration: 8s, 3s;
+  animation-iteration-count: 1, infinite;
+  animation-delay: 0s, 8s; }
+
+.letter1 {
+  transform: rotate(345deg); }
+
+.letter3 {
+  transform: rotate(15deg); }
+
+/*# sourceMappingURL=main.css.map */

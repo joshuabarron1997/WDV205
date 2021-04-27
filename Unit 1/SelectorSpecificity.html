@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Selector Specificity</title>
+</head>
+
+<body>
+	<h1>Part 1 Selectors</h1>
+		<ol>Element Selector
+			<li>An elemment selector can apply to all of whatever element you specify.</li>
+			<li>It is best to use this selector to do sweeping changes, like making all paragraph elements centered, or making all heading 1's boldened</li>
+			<li>The syntax for a element selector is just the element shorthand, for example: p &#123;&#125; or h1 &#123;&#125;</li>
+		</ol>
+		<ol>Group Selector
+			<li>A group selector can apply to multiple of however many elements you specify</li>
+			<li>This selector is used to make even broader changes than just one element, like making all paragraph, heading 1's and unordered list's italic</li>
+			<li>The syntax for a group selector is a comma after each element you want grouped together, for example: p, h1, ul &#123;&#125;</li>
+		</ol>	
+		<ol>Descendant Selector
+			<li>A descendant selector applys to the element that is a child to the chosen elements/selectors</li>
+			<li>It is best used to pinpoint specific places to change, like if you only wanted links from paragraphs from a specific section</li>
+			<li>The syntax for a descendant selector is a space between each parent and child, for example: #content p a &#123;&#125; </li>
+		</ol>
+		<ol>Independent Class selector
+			<li>A independent class selector will only apply to an element that is marked with "class =" in its tag</li>
+			<li>It is useful for creating styles for an element and putting them in where you need them, like creating a bold class and applying it when you need to bolden something</li>
+			<li>a independent class selctor uses a period as its symbol for example: .bold</li>
+		</ol>
+		<ol>Dependent Class
+			<li>dependent is very similar to independent except that it will only apply to a specified element that has the class tag</li>
+			<li>It would be used for if you wanted to have .bold bolden everything, but if it was in a h2 element then it would emphasize it instead</li>
+			<li>Dependent classes are shown with a period between the parent element and the class tag, for example: h1.bold &#123;&#125;</li>
+		</ol>
+		<ol>ID Selector
+			<li>An ID selector works similarly to class but also has a higher specificity.</li>
+			<li>ID selectors are generally used to section off areas of the page to link to, or make float as well as make broad styles</li>
+			<li>An Id selector is refered to with a hashtag sign, for example: #maincontent &#123;&#125;</li>
+		</ol>
+		<ol>Universal Selector
+			<li>A universal selector will select everything on the page</li>
+			<li>A reason to use the universal selector is if you want everything centered and a certain font by default</li>
+			<li>The symbal for universal selector is an astrix, for example: * &#123;&#125;</li>
+		</ol>
+		<ol>Pseudo Selectors
+			<li>Pseudo selectors style specific functions of a page</li>
+			<li>Pseudo selectors can be used for many various things but some examples are, styling visited/unvisited links, hovered text, the first letter of a sentence, and many more applications</li>
+			<li>Pseudo selectors use colons between the selector and pseudo class for example: a:visited &#123;&#125;</li>
+		</ol>
+	<h1>Part 2 Selector Specificity</h1>
+		<ol>From strongest to weakest
+			<li>ID Selector</li>
+			<li>Dependent/Dependent/Pseudo Class Selector</li>
+			<li>Descendant Selector</li>
+			<li>Group Selector</li>
+			<li>Element Selector</li>
+			<li>Universal Selector</li>
+		</ol>
+</body>
+</html>
